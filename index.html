@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Manipulation Detector</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">AI / NLP PROJECT</span>
+        <h1>Digital Manipulation Detector</h1>
+        <p>Analyze messages for linguistic patterns associated with pressure, guilt, blame, threats and other manipulation tactics.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <label for="message">Paste a message or conversation</label>
+      <textarea id="message" placeholder="Example: If you really cared about me, you would answer me right now. After everything I've done for you, this is your fault."></textarea>
+      <div class="actions">
+        <button id="analyzeBtn">Analyze Message</button>
+        <button class="secondary" id="sampleBtn">Load Sample</button>
+        <button class="secondary" id="clearBtn">Clear</button>
+      </div>
+      <p id="error" class="error"></p>
+    </section>
+
+    <section id="results" class="hidden">
+      <div class="grid">
+        <div class="card score-card">
+          <h3>Manipulation Risk</h3>
+          <div id="score" class="score">0</div>
+          <div id="level" class="level">-</div>
+          <p id="description"></p>
+        </div>
+        <div class="card">
+          <h3>Text Tone</h3>
+          <p id="sentiment" class="bigtext">-</p>
+          <h3>Detected Patterns</h3>
+          <div id="patterns"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Sentence Analysis</h3>
+        <div id="sentences"></div>
+      </div>
+
+      <div class="card">
+        <h3>Suggested Interpretation Checks</h3>
+        <ul id="recommendations"></ul>
+      </div>
+
+      <div class="disclaimer" id="disclaimer"></div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
