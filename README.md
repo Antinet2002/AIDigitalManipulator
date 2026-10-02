@@ -1,3 +1,4 @@
+<img width="1920" height="1080" alt="Screenshot 2026-10-02 151803" src="https://github.com/user-attachments/assets/d4fd39c6-cc29-4072-9f54-b6811a19e4d6" />
 # AI Digital Manipulation Detector
 
 A Flask + NLP project that analyzes text for predefined linguistic patterns associated with manipulation, emotional pressure, guilt-tripping, blame shifting, threats, urgency, gaslighting-style wording, and excessive dependency.
